@@ -102,19 +102,7 @@
       <plugin>
         <groupId>org.mule.tools.maven</groupId>
         <artifactId>mule-maven-plugin</artifactId>
-        <!-- <configuration>
-          <deploymentType>cloudhub</deploymentType>
-          <muleVersion>${mule.version}</muleVersion> 
-          <username>jkoracle23</username> 
-          <password>JitendraKumarMule123</password> 
-          <applicationName>callrestws</applicationName>
-          <environment>Sandbox</environment> 
-         
-          <region>${cloudhub.region}</region>
-          <uri>${anypoint.uri}</uri> 
-          <workerType>${cloudhub.workerType}</workerType>
-          <workers>${cloudhub.workers}</workers>
-        </configuration> -->
+        
         <executions>
           <execution>
             <id>deploy</id>
