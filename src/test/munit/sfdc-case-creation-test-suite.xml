@@ -9,7 +9,7 @@
 		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<munit:config name="sfdc-case-creation-test-suite.xml" />
-	<munit:test name="sfdc-case-creation-test-suite-sfdc-case-creationFlowTest" doc:id="03c340a8-3eaf-4db8-a7c9-25895657279e" description="Test">
+	<munit:test name="sfdc-case-creation-test-suite-sfdc-case-creationFlowTest" doc:id="03c340a8-3eaf-4db8-a7c9-25895657279e" description="Test" tags="int">
 		<munit:execution >
 			<flow-ref doc:name="Flow-ref to sfdc-case-creationFlow" doc:id="f2316b2d-80c0-4434-9aa6-197ab63a173c" name="sfdc-case-creationFlow"/>
 		</munit:execution>
@@ -25,7 +25,7 @@ payload]]></ee:set-payload>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="7b66e15c-62aa-4379-bc64-ef4a3ab54d20" message="Payload is null" expression='#[payload]' is="#[MunitTools::notNullValue()]"/>
 		</munit:validation>
 	</munit:test>
-	<munit:test name="sfdc-case-creation-test-suite-sfdc-account-creationFlowTest" doc:id="22049dd7-ef9e-4fd6-8c45-47c28b22a360" description="Test">
+	<munit:test name="sfdc-case-creation-test-suite-sfdc-account-creationFlowTest" doc:id="22049dd7-ef9e-4fd6-8c45-47c28b22a360" description="Test" tags="int">
 		<munit:execution >
 			<flow-ref doc:name="Flow-ref to sfdc-account-creationFlow" doc:id="4a85bc03-79e1-48ba-9cb2-85c840627ece" name="sfdc-account-creationFlow"/>
 		</munit:execution>
@@ -33,7 +33,7 @@ payload]]></ee:set-payload>
 			<munit-tools:assert-that doc:name="Assert that" doc:id="1c4d859c-f2ba-4132-8eff-4a7f54ea40a0" message="Payload is null" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
 		</munit:validation>
 	</munit:test>
-	<munit:test name="sfdc-case-creation-test-suite-sfdc-account-queryFlowTest" doc:id="63e89b85-4437-4737-86c3-a5f8c1c5f3b9" description="Test">
+	<munit:test name="sfdc-case-creation-test-suite-sfdc-account-queryFlowTest" doc:id="63e89b85-4437-4737-86c3-a5f8c1c5f3b9" description="Test" tags="sys">
 		<munit:execution >
 			<flow-ref doc:name="Flow-ref to sfdc-account-queryFlow" doc:id="fcd3ce0d-af21-4e8f-ad55-d044aa5fd179" name="sfdc-account-queryFlow"/>
 		</munit:execution>
